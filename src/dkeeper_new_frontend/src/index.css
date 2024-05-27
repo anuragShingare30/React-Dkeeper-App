@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(215, 207, 207);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(215, 207, 207);
+    background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png");
+}
+.content{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    /* height: 90px; */
+    width: 98%;
+    color: whitesmoke;
+    display: flex; 
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(245, 190, 8);
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: -2px 0px 5px 0px black;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.9;
+    color:grey;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+}
+.box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.writer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px 0px black;
+    
+}
+.writer .input{
+    width: 350px;
+    padding: 5px;
+    background-color: whitesmoke;
+    border: 1px solid whitesmoke;
+    font-size: 20px;
+}
+.writer .btn{
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(245, 190, 8);;
+    background-color: rgb(245, 190, 8);
+    border-radius: 30px;
+    color: whitesmoke;
+    position: relative;
+    left: 300px;
+    top: 30px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+.note_take{
+    width: 95%;
+    /* border: 1px solid black; */
+    margin-top: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr;
+    grid-gap: 50px;
+}
+.notes{
+    padding: 10px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px 0px black;
+}
+.notes .delete_note{
+    background-color: whitesmoke;
+    color: rgb(245, 190, 8);
+    border: 1px solid whitesmoke;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+}
+@media screen and (max-width:500px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .header{
+        width: 100%;
+        padding: 5px
+    }
+    .note_take{
+        display: grid;
+        grid-template-columns: 0.25fr 0.25fr;
+        grid-template-rows: 0.25fr 0.25fr;
+    }
+    .notes{
+        padding: 5px;
+    }
+    .footer{
+        position: relative;
+        top: 1%;
+        }
+}
+@media screen and (max-width:940px){
+    .header{
+        width: 100%;
+    }
+    
+}

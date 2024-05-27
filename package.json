@@ -1,0 +1,42 @@
+{
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "name": "dkeeper_new",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "prebuild": "npm run prebuild --workspaces --if-present",
+    "pretest": "npm run prebuild --workspaces --if-present",
+    "start": "npm start --workspaces --if-present",
+    "test": "npm test --workspaces --if-present"
+  },
+  "type": "module",
+  "workspaces": [
+    "src/dkeeper_new_frontend"
+  ],
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.18",
+    "@mui/material": "^5.15.18",
+    "@dfinity/agent": "0.15.2", 
+    "@dfinity/candid": "0.15.2", 
+    "@dfinity/principal": "0.15.2",
+    "assert": "2.0.0",
+    "buffer": "6.0.3",
+    "copy-webpack-plugin": "^9.0.1",
+    "events": "3.3.0",
+    "html-webpack-plugin": "5.5.0",
+    "process": "0.11.10",
+    "stream-browserify": "3.0.0",
+    "terser-webpack-plugin": "5.2.5",
+    "util": "0.12.4",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.0.0",
+    "webpack-dev-server": "^4.4.0"
+  }
+}
