@@ -12,7 +12,7 @@ body{
     align-items: center;
 }
 .header{
-    /* height: 90px; */
+    /* height: 90px; */ 
     width: 98%;
     color: whitesmoke;
     display: flex; 

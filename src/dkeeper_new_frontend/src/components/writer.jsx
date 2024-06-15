@@ -53,7 +53,7 @@ function Write_note(){
             addContent:note.content
         }); 
         setNoteArr((pre)=>{
-            return [...pre,note];
+            return [note, ...pre];
         }) ;
     };
     //----------------------------------------//
